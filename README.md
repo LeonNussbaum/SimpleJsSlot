@@ -35,7 +35,12 @@ This project is a simple slot machine implemented using HTML, CSS, and JavaScrip
 |-- script.js      # Game logic
 |-- images/        # Slot machine symbols
 |-- audio/         # Sound effects
+|-- img/           # Folder containing screenshots
+    |-- img.png    # Screenshot of the slot machine
 ```
+
+## Screenshot
+![Slot Machine Screenshot](images/img.png)
 
 ## TODO:
 - Implementing a more detailed winning system
