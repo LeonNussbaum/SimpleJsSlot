@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <audio id="win-sound">
+    <source src="audio/winsound.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="spin-sound">
+    <source src="audio/spinsound.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="start-sound">
+    <source src="audio/start.mp3" type="audio/mpeg">
+  </audio>
+  </audio>
+  <audio id="monneyadd-sound">
+    <source src="audio/monneyadd.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="betsound">
+    <source src="audio/betchange.mp3" type="audio/mpeg">
+  </audio>
+
+  <h1 class="winammount" id="wwin"></h1>
+  <div class="slot">
+    <div class="slot-machine">
+      <img src="images/line1.png" class="lines" id="l1">
+      <img src="images/line2.png" class="lines" id="l2">
+      <img src="images/line3.png" class="lines" id="l3">
+      <img src="images/line4.png" class="lines" id="l4">
+      <img src="images/line5.png" class="lines" id="l5">
+      <img src="images/line6.png" class="lines" id="l6">
+      <img src="images/line7.png" class="lines" id="l7">
+      <img src="images/line8.png" class="lines" id="l8">
+      <img src="images/line9.png" class="lines" id="l9">
+      <div class="reel" id="reel1">
+        <img src="images/1.png" class="symbol" id="101">
+        <img src="images/1.png" class="symbol" id="102">
+        <img src="images/1.png" class="symbol" id="103">
+        <img src="images/1.png" class="symbol" id="104">
+        <img src="images/1.png" class="symbol" id="105">
+        <img src="images/1.png" class="symbol" id="106">
+        <img src="images/1.png" class="symbol" id="107">
+        <img src="images/1.png" class="symbol" id="108">
+        <img src="images/1.png" class="symbol" id="109">
+        <img src="images/1.png" class="symbol" id="110">
+        <img src="images/1.png" class="symbol" id="111">
+        <img src="images/1.png" class="symbol" id="112">
+        <img src="images/1.png" class="symbol" id="113">
+        <img src="images/1.png" class="symbol" id="114">
+        <img src="images/1.png" class="symbol" id="115">
+        <img src="images/1.png" class="symbol" id="116">
+        <img src="images/1.png" class="symbol" id="117">
+        <img src="images/1.png" class="symbol" id="118">
+        <img src="images/1.png" class="symbol" id="119">
+      </div>
+      <div class="reel" id="reel2">
+        <img src="images/1.png" class="symbol" id="201">
+        <img src="images/1.png" class="symbol" id="202">
+        <img src="images/1.png" class="symbol" id="203">
+        <img src="images/1.png" class="symbol" id="204">
+        <img src="images/1.png" class="symbol" id="205">
+        <img src="images/1.png" class="symbol" id="206">
+        <img src="images/1.png" class="symbol" id="207">
+        <img src="images/1.png" class="symbol" id="208">
+        <img src="images/1.png" class="symbol" id="209">
+        <img src="images/1.png" class="symbol" id="210">
+        <img src="images/1.png" class="symbol" id="211">
+        <img src="images/1.png" class="symbol" id="212">
+        <img src="images/1.png" class="symbol" id="213">
+        <img src="images/1.png" class="symbol" id="214">
+        <img src="images/1.png" class="symbol" id="215">
+        <img src="images/1.png" class="symbol" id="216">
+        <img src="images/1.png" class="symbol" id="217">
+        <img src="images/1.png" class="symbol" id="218">
+        <img src="images/1.png" class="symbol" id="219">
+      </div>
+      <div class="reel" id="reel3">
+        <img src="images/1.png" class="symbol" id="301">
+        <img src="images/1.png" class="symbol" id="302">
+        <img src="images/1.png" class="symbol" id="303">
+        <img src="images/1.png" class="symbol" id="304">
+        <img src="images/1.png" class="symbol" id="305">
+        <img src="images/1.png" class="symbol" id="306">
+        <img src="images/1.png" class="symbol" id="307">
+        <img src="images/1.png" class="symbol" id="308">
+        <img src="images/1.png" class="symbol" id="309">
+        <img src="images/1.png" class="symbol" id="310">
+        <img src="images/1.png" class="symbol" id="311">
+        <img src="images/1.png" class="symbol" id="312">
+        <img src="images/1.png" class="symbol" id="313">
+        <img src="images/1.png" class="symbol" id="314">
+        <img src="images/1.png" class="symbol" id="315">
+        <img src="images/1.png" class="symbol" id="406">
+        <img src="images/1.png" class="symbol" id="317">
+        <img src="images/1.png" class="symbol" id="318">
+        <img src="images/1.png" class="symbol" id="319">
+      </div>
+      <div class="reel" id="reel4">
+        <img src="images/1.png" class="symbol" id="401">
+        <img src="images/1.png" class="symbol" id="402">
+        <img src="images/1.png" class="symbol" id="403">
+        <img src="images/1.png" class="symbol" id="404">
+        <img src="images/1.png" class="symbol" id="405">
+        <img src="images/1.png" class="symbol" id="406">
+        <img src="images/1.png" class="symbol" id="407">
+        <img src="images/1.png" class="symbol" id="408">
+        <img src="images/1.png" class="symbol" id="409">
+        <img src="images/1.png" class="symbol" id="410">
+        <img src="images/1.png" class="symbol" id="411">
+        <img src="images/1.png" class="symbol" id="412">
+        <img src="images/1.png" class="symbol" id="413">
+        <img src="images/1.png" class="symbol" id="414">
+        <img src="images/1.png" class="symbol" id="415">
+        <img src="images/1.png" class="symbol" id="416">
+        <img src="images/1.png" class="symbol" id="417">
+        <img src="images/1.png" class="symbol" id="418">
+        <img src="images/1.png" class="symbol" id="419">
+      </div>
+      <div class="reel" id="reel5">
+        <img src="images/1.png" class="symbol" id="501">
+        <img src="images/1.png" class="symbol" id="502">
+        <img src="images/1.png" class="symbol" id="503">
+        <img src="images/1.png" class="symbol" id="504">
+        <img src="images/1.png" class="symbol" id="505">
+        <img src="images/1.png" class="symbol" id="506">
+        <img src="images/1.png" class="symbol" id="507">
+        <img src="images/1.png" class="symbol" id="508">
+        <img src="images/1.png" class="symbol" id="509">
+        <img src="images/1.png" class="symbol" id="510">
+        <img src="images/1.png" class="symbol" id="511">
+        <img src="images/1.png" class="symbol" id="512">
+        <img src="images/1.png" class="symbol" id="513">
+        <img src="images/1.png" class="symbol" id="514">
+        <img src="images/1.png" class="symbol" id="515">
+        <img src="images/1.png" class="symbol" id="516">
+        <img src="images/1.png" class="symbol" id="517">
+        <img src="images/1.png" class="symbol" id="518">
+        <img src="images/1.png" class="symbol" id="519">
+      </div>
+    </div>
+    <div class="controls">
+      <div class="balancediv">
+        <h1 class="balance">Balance: </h1>
+        <h1 id="balance">0</h1>
+      </div>
+      <div class="betdiv">
+        <h1 class="bet">Bet:</h1>
+        <h1 id="wager">10</h1>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
