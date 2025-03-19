@@ -43,6 +43,8 @@ This project is a simple slot machine implemented using HTML, CSS, and JavaScrip
 - More symbol types for diverse spins
 - Slot Feature
 
+## Test it out
+You can test the slot machine live at: [https://silverkush.de/slot/index.html](https://silverkush.de/slot/index.html)
+
 ## License
 This project is free to use and modify.
-
